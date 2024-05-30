@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+/* Buttons mobile nav */
 .openBtn,
 .closeBtn
 {
@@ -21,6 +22,7 @@
     color: white;
 }
 
+/* Mobile navigation Links */
 .mobNav {
     background-color: black;
     height: 0vh;
@@ -68,6 +70,38 @@ section {
     align-content: center;
 }
 
+.header-text h1 {
+    font-size: 4rem;
+    color: white;
+}
+
+.header-text p {
+    font-size: 1.7rem;
+    color: white;
+}
+
+.header-text button,
+.about-text button,
+.company-block button,
+.text-tour button,
+.contact button {
+    padding: 1rem 2rem;
+    margin: 1rem;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.header-text button:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+    transition: 500ms ease-in-out;
+}
+
+
+/* Top Button */
 .top {
     position: fixed;
     right: 1rem;
@@ -79,6 +113,9 @@ section {
     border-radius: 50%;
 }
 
+
+
+/* About section */
 .about-text {
     height: 100%;
     align-content: center;
@@ -94,6 +131,31 @@ section {
     margin: 0 0.4rem;
 }
 
+.about-text span,
+.next-tour span {
+    color: #c4c4c4;
+}
+
+.about-text h2 {
+    text-align: center;
+}
+
+.about-text p {
+    padding: 0.2rem 0;
+}
+
+/* .about-text button {
+    border: 1px solid #000000;
+    color: #000000;
+    background-color: #ffffff;
+}
+.about-text button:hover {
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    transition: 500ms ease-in-out;
+} */
+
 .photos-wrap {
     display: flex;
     justify-content: center;
@@ -102,7 +164,7 @@ section {
 }
 
 .photos-wrap img {
-    width: 10rem;
+    width: 9rem;
     margin: 0.1rem;
 }
 
@@ -112,10 +174,33 @@ section {
     padding: 3rem 0.5rem 1rem 0.5rem;
 }
 
+.travel h2, h3,
+.next-tour h2,
+.contact h2,
+.contact p {
+    text-align: center;
+    margin: 1rem 0 0.2rem 0;
+}
+
 .company-block img {
-    width: 10rem;
-    float: left;
+    width: 100%;
     margin: 0.2rem;
+}
+
+.about-text button,
+.company-block button,
+.contact button {
+    border: 1px solid #000000;
+    color: #000000;
+    background-color: #ffffff;
+}
+.about-text button:hover,
+.company-block button:hover,
+.contact button:hover {
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    transition: 500ms ease-in-out;
 }
 
 
@@ -126,4 +211,40 @@ section {
 }
 .text-tour img {
     width: 100%;
+}
+
+
+
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3rem;
+    background-color: #f4f4f4;
+}
+.contact form {
+    text-align: center;
+}
+.contact form input {
+    margin: 0.5rem;
+    padding: 1rem;
+}
+
+
+footer {
+    text-align: center;
+    padding: 1rem 0 1rem 0;
+}
+footer nav a {
+    text-decoration: none;
+    color: black;
+    padding: 0.2rem 0.5rem;
+}
+
+footer nav a:hover {
+    background-color: #000000;
+    color: #ffffff;
+    transition: 500ms ease-in-out;
 }
