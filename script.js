@@ -13,3 +13,9 @@ openBtn.addEventListener('click', () => {
     openBtn.classList.add('hidden');
     closeBtn.classList.remove('hidden');
 });
+
+mobNav.addEventListener('click', () => {
+    mobNav.classList.remove('openeMobNav');
+    closeBtn.classList.add('hidden');
+    openBtn.classList.remove('hidden');
+});

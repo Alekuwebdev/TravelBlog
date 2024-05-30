@@ -3,15 +3,23 @@
     padding: 0;
 }
 
-
-
 .openBtn,
 .closeBtn
 {
-    position: absolute;
+    position: fixed;
     border: none;
     top: 1rem;
     left: 1rem;
+    background-color: transparent;
+    font-size: 2rem;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.closeBtn {
+    font-size: 3rem;
+    top: 0.75rem;
+    color: white;
 }
 
 .mobNav {
@@ -20,15 +28,19 @@
     width: 100vw;
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+    overflow-y: hidden;
     transition: 500ms ease-in-out;
+    position: fixed;
 }
 
 .mobNav a {
     margin: 1rem;
     text-decoration: none;
     color: white;
+    font-size: 2rem;
 }
 
 .openeMobNav {
@@ -42,6 +54,13 @@
     transition: 500ms ease-in-out;
 }
 
+section {
+    background-color: red;
+    min-height: 100vh;
+}
+
 .hidden {
     display: none;
 };
+
+
