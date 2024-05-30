@@ -8,8 +8,8 @@
 {
     position: fixed;
     border: none;
-    top: 1rem;
-    left: 1rem;
+    top: 0rem;
+    left: 0.4rem;
     background-color: transparent;
     font-size: 2rem;
     font-weight: bold;
@@ -18,7 +18,6 @@
 
 .closeBtn {
     font-size: 3rem;
-    top: 0.75rem;
     color: white;
 }
 
@@ -55,12 +54,76 @@
 }
 
 section {
-    background-color: red;
     min-height: 100vh;
 }
 
 .hidden {
     display: none;
-};
+}
+
+.content-section {
+    height: 100%;
+    background: url('./img/10.png') center center no-repeat;
+    text-align: center;
+    align-content: center;
+}
+
+.top {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.555);
+    padding: 0.7rem 1rem;
+    border-radius: 50%;
+}
+
+.about-text {
+    height: 100%;
+    align-content: center;
+    padding: 3rem 0.5rem 0 0.5rem;
+}
+
+.about img {
+    width: 10rem;
+    float: right;
+}
+
+.photos-text {
+    margin: 0 0.4rem;
+}
+
+.photos-wrap {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    flex-basis: auto;   
+}
+
+.photos-wrap img {
+    width: 10rem;
+    margin: 0.1rem;
+}
 
 
+
+.travel {
+    padding: 3rem 0.5rem 1rem 0.5rem;
+}
+
+.company-block img {
+    width: 10rem;
+    float: left;
+    margin: 0.2rem;
+}
+
+
+
+
+.next-tour {
+    padding: 0 0.5rem;
+}
+.text-tour img {
+    width: 100%;
+}
