@@ -3,10 +3,13 @@
     padding: 0;
 }
 
+p {
+    color: #626263;
+}
+
 /* Buttons mobile nav */
 .openBtn,
-.closeBtn
-{
+.closeBtn {
     position: fixed;
     border: none;
     top: 0rem;
@@ -93,6 +96,7 @@ section {
     font-weight: bold;
     font-size: 1rem;
 }
+
 .header-text button:hover {
     background-color: #ffffff;
     color: #000000;
@@ -123,8 +127,7 @@ section {
 }
 
 .about img {
-    width: 10rem;
-    float: right;
+    width: 100%;
 }
 
 .photos-text {
@@ -159,8 +162,8 @@ section {
 .photos-wrap {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; 
-    flex-basis: auto;   
+    flex-wrap: wrap;
+    flex-basis: auto;
 }
 
 .photos-wrap img {
@@ -174,7 +177,8 @@ section {
     padding: 3rem 0.5rem 1rem 0.5rem;
 }
 
-.travel h2, h3,
+.travel h2,
+h3,
 .next-tour h2,
 .contact h2,
 .contact p {
@@ -194,6 +198,7 @@ section {
     color: #000000;
     background-color: #ffffff;
 }
+
 .about-text button:hover,
 .company-block button:hover,
 .contact button:hover {
@@ -209,6 +214,7 @@ section {
 .next-tour {
     padding: 0 0.5rem;
 }
+
 .text-tour img {
     width: 100%;
 }
@@ -224,9 +230,11 @@ section {
     padding: 0.3rem;
     background-color: #f4f4f4;
 }
+
 .contact form {
     text-align: center;
 }
+
 .contact form input {
     margin: 0.5rem;
     padding: 1rem;
@@ -237,6 +245,7 @@ footer {
     text-align: center;
     padding: 1rem 0 1rem 0;
 }
+
 footer nav a {
     text-decoration: none;
     color: black;
@@ -247,4 +256,51 @@ footer nav a:hover {
     background-color: #000000;
     color: #ffffff;
     transition: 500ms ease-in-out;
+}
+
+/* Responsive */
+@media only screen and (min-width: 400px) {
+    .photos-wrap img {
+        width: 7rem;
+        margin: 0.1rem;
+    }
+
+    .header-text button,
+    .about-text button,
+    .company-block button,
+    .text-tour button,
+    .contact button {
+        padding: 0.7rem 2rem;
+        margin: 1rem;
+    }
+}
+
+
+@media only screen and (min-width: 456px) {
+    .photos-wrap img {
+        width: 8rem;
+        margin: 0.1rem;
+    }
+    .contact button {
+        padding: 0.5rem 2rem;
+        width: 20rem;
+    }
+}
+
+
+@media only screen and (min-width: 655px) {
+    .photos-wrap img {
+        width: 10rem;
+    }
+}
+
+
+
+@media only screen and (min-width: 700px) {
+    .photos-wrap img {
+        width: 13rem;
+    }
+    .contact form input {
+        width: 100%;
+    }
 }
