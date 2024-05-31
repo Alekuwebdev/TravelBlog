@@ -7,6 +7,10 @@ p {
     color: #626263;
 }
 
+.nav {
+    display: none;
+}
+
 /* Buttons mobile nav */
 .openBtn,
 .closeBtn {
@@ -47,7 +51,7 @@ p {
     font-size: 2rem;
 }
 
-.openeMobNav {
+.openMobNav {
     background-color: black;
     height: 100vh;
     width: 100vw;
@@ -117,21 +121,24 @@ section {
     border-radius: 50%;
 }
 
+.top:hover {
+    color: #000000;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+}
 
 
 /* About section */
 .about-text {
     height: 100%;
     align-content: center;
-    padding: 3rem 0.5rem 0 0.5rem;
+    /* padding: 3rem 0 0 0; */
+    margin-bottom: 3rem;
 }
 
 .about img {
     width: 100%;
-}
-
-.photos-text {
-    margin: 0 0.4rem;
+    margin-top: 2rem;
 }
 
 .about-text span,
@@ -165,7 +172,8 @@ section {
 h3,
 .next-tour h2,
 .contact h2,
-.contact p {
+.contact p,
+.photos-text h2 {
     text-align: center;
     margin: 1rem 0 0.2rem 0;
 }
@@ -244,10 +252,14 @@ footer nav a:hover {
 
 /* Responsive */
 @media only screen and (min-width: 400px) {
+    .about-text {
+        margin-bottom: 5rem;
+    }
+
     section {
-        background-color: red;
         padding: 0 0.5rem;
     }
+
     .photos-wrap img {
         width: 7rem;
         margin: 0.1rem;
@@ -269,6 +281,7 @@ footer nav a:hover {
         width: 8rem;
         margin: 0.1rem;
     }
+
     .contact button {
         padding: 0.5rem 2rem;
         width: 20rem;
@@ -288,7 +301,122 @@ footer nav a:hover {
     .photos-wrap img {
         width: 13rem;
     }
+
     .contact form input {
         width: 100%;
+    }
+}
+
+
+@media only screen and (min-width: 769px) {
+
+    .openBtn,
+    .closeBtn {
+        display: none;
+    }
+
+    .nav {
+        display: block;
+        position: fixed;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: #d0d0d09d;
+    }
+
+    .nav a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 1.5rem;
+        width: 100%;
+        text-align: center;
+        padding: 0.5rem;
+        transition: 500ms ease-in-out;
+    }
+
+    .nav a:hover {
+        background-color: #ffffff;
+        color: #000000;
+        transition: 500ms ease-in-out;
+    }
+
+    .about img {
+        width: 50%;
+    }
+
+    .about {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .about-text {
+        height: 75vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 5rem;
+    }
+
+    .company-wrap {
+        display: flex;
+    }
+
+    .company-block {
+        margin: 1rem;
+    }
+
+    .header-text h1 {
+        font-size: 6rem;
+    }
+
+    .header-text p {
+        font-size: 3rem;
+    }
+
+    .header-text button,
+    .about-text button,
+    .company-block button,
+    .text-tour button,
+    .contact button {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+    .nav a {
+        font-size: 2rem;
+    }
+}
+
+
+@media only screen and (min-width: 1024px) {
+    .photos-wrap img {
+        width: 20rem;
+        margin: 0.5rem;
+    }
+    .header-text h1 {
+        font-size: 8rem;
+    }
+
+    .header-text p {
+        font-size: 4rem;
+    }
+
+    .header-text button,
+    .about-text button,
+    .company-block button,
+    .text-tour button,
+    .contact button {
+        font-size: 1.9rem;
+    }
+    p {
+        font-size: 1.5rem;
+    }
+    .nav a {
+        font-size: 3rem;
     }
 }
