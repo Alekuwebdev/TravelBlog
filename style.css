@@ -143,22 +143,6 @@ section {
     text-align: center;
 }
 
-.about-text p {
-    padding: 0.2rem 0;
-}
-
-/* .about-text button {
-    border: 1px solid #000000;
-    color: #000000;
-    background-color: #ffffff;
-}
-.about-text button:hover {
-    background-color: #000000;
-    color: #ffffff;
-    border: 1px solid #ffffff;
-    transition: 500ms ease-in-out;
-} */
-
 .photos-wrap {
     display: flex;
     justify-content: center;
@@ -260,6 +244,10 @@ footer nav a:hover {
 
 /* Responsive */
 @media only screen and (min-width: 400px) {
+    section {
+        background-color: red;
+        padding: 0 0.5rem;
+    }
     .photos-wrap img {
         width: 7rem;
         margin: 0.1rem;
